@@ -8,8 +8,7 @@ metadata:
 data:
   VM_ENV: "DEV"
   TZ: "Europe/Warsaw"
-  #APP_VER: "v0.0.3"
-  APP_VER: "v0.0.5"
+  APP_VER: "v0.0.6"
   SCRIPT: |
     mkdir -p /var/www/app && 
     echo "
@@ -43,7 +42,7 @@ spec:
     metadata:
       labels:
         app: app-nginx
-        version: v0.0.2
+        version: v0.0.3
     spec:
       containers:
         - name: cont-app-nginx
