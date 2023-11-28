@@ -9,7 +9,7 @@ data:
   VM_ENV: "DEV"
   TZ: "Europe/Warsaw"
   #APP_VER: "v0.0.3"
-  APP_VER: "v0.0.4"
+  APP_VER: "v0.0.5"
   SCRIPT: |
     mkdir -p /var/www/app && 
     echo "
@@ -80,8 +80,7 @@ metadata:
 spec:
   selector:
     app: app-nginx
-  #type:  LoadBalancer | ClusterIP | NodePort
-  type: NodePort
+  type: ClusterIP
   ports:
     - name: http
       port: 80
